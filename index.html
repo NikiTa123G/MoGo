@@ -1404,58 +1404,60 @@
       let unlock = true;
 
       const timeout = 800;
-
-      let = sliderPopap = new Swiper('.popap-slider',{
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'fraction'
-        },
-
-          observer: true,
-          observerSlideChildren: true,
-          observerParents: true,
-
-        speed: 600,
-
-        breakpoints: {
-            320: {
-              effect: 'fade',
-            
-              speed: 500,
-
-              fadeEffect: {
-                crossFade: true,
-                
-              },
-
-              cubeEffect: {
-              slideShadows: false,
-              shadow: false,
-              shadowOffset: 0,
-              shadowScale: 0
-            },
-            },
-
-            768: {
-              effect: 'cube',
-              
-            },
+      
+      document.addEventListener('DOMContentLoaded', function () {
+        let = sliderPopap = new Swiper('.popap-slider',{
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
           },
 
-          effect: 'cube',
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction'
+          },
 
-          cubeEffect: {
-          slideShadows: true,
-          shadow: true,
-          shadowOffset: 20,
-          shadowScale: 0.94
-        },
-        
+            observer: true,
+            observerSlideChildren: true,
+            observerParents: true,
+
+          speed: 600,
+
+          breakpoints: {
+              320: {
+                effect: 'fade',
+
+                speed: 500,
+
+                fadeEffect: {
+                  crossFade: true,
+
+                },
+
+                cubeEffect: {
+                slideShadows: false,
+                shadow: false,
+                shadowOffset: 0,
+                shadowScale: 0
+              },
+              },
+
+              768: {
+                effect: 'cube',
+
+              },
+            },
+
+            effect: 'cube',
+
+            cubeEffect: {
+            slideShadows: true,
+            shadow: true,
+            shadowOffset: 20,
+            shadowScale: 0.94
+          },
+
+        });
       });
 
       if (popapLinkcs.length > 0) {
