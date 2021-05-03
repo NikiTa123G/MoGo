@@ -1432,9 +1432,9 @@ body.lock {
   justify-content: center;
   padding: 50px 35px;
 }
-@media (max-height: 760px) {
+@media (max-height: 550px) {
   .service .popap .popap-body {
-    padding: 0px 40px 0px;
+    padding: 0px 40px;
   }
 }
 @media (max-height: 360px) {
@@ -1466,7 +1466,7 @@ body.lock {
   align-items: center;
   justify-content: center;
 }
-@media (max-height: 620px) {
+@media (max-height: 550px) {
   .service .popap .popap-body .popap-content .swiper-container .swiper-wrapper .swiper-slide {
     align-items: flex-start;
   }
