@@ -1381,24 +1381,28 @@ body.lock {
   z-index: 50;
   position: fixed;
   width: 100%;
-  height: 0%;
+  height: 100vh;
   overflow: hidden;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.8s;
+  transition: 0.8s;
 }
 .service .popap.open {
-  height: 100vh;
   visibility: visible;
   opacity: 1;
 }
 .service .popap.open .popap-body .popap-content {
+  overflow: visible;
+  height: 100%;
   transform: perspective(0px) translate(0, 0%) rotatex(0deg);
   opacity: 1;
   visibility: visible;
+  transition-property: transform, opacity, height;
+  transition-duration: 1s, 1s, 0s;
+  transition-delay: 0s;
 }
 .service .popap .clouce-btn {
   text-decoration: none;
@@ -1432,9 +1436,9 @@ body.lock {
   justify-content: center;
   padding: 50px 35px;
 }
-@media (max-height: 550px) {
+@media (max-height: 760px) {
   .service .popap .popap-body {
-    padding: 0px 40px;
+    padding: 0px 40px 0px;
   }
 }
 @media (max-height: 360px) {
@@ -1443,12 +1447,15 @@ body.lock {
   }
 }
 .service .popap .popap-body .popap-content {
-  transition: 0.8s;
+  transition-property: transform, opacity, height;
+  transition-duration: 1s, 1s, 0s;
+  transition-delay: 0s, 0s, 1s;
+  height: 0;
   opacity: 0;
   min-width: 0;
   visibility: hidden;
-  height: 100%;
   max-width: 900px;
+  overflow: hidden;
   transform: perspective(600px) translate(0, -100%) rotatex(45deg);
 }
 .service .popap .popap-body .popap-content.bg {
@@ -1466,7 +1473,7 @@ body.lock {
   align-items: center;
   justify-content: center;
 }
-@media (max-height: 550px) {
+@media (max-height: 620px) {
   .service .popap .popap-body .popap-content .swiper-container .swiper-wrapper .swiper-slide {
     align-items: flex-start;
   }
