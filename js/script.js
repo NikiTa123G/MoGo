@@ -113,7 +113,7 @@ window.onscroll = () => {
 function scrollTo(el) {
 	window.scroll({
 		left: 0,
-		top: el.offsetTop,
+		top: el.offsetTop - 82,
 		behavior: 'smooth'
 	});
 }
