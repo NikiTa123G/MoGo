@@ -816,7 +816,7 @@ body.lock {
 .serves .serves-tab .tabs-body .tab-content.tab-3 {
   transition: all 1.4s ease 0.4s;
 }
-.serves .serves-tab .tabs-body .tab-content.active .btn-tab p {
+.serves .serves-tab .tabs-body .tab-content.active .btn-tab span {
   transform: rotate(180deg);
   transition: all 0.6s ease 0.3s;
 }
@@ -846,7 +846,7 @@ body.lock {
 .serves .serves-tab .tabs-body .tab-content .btn-tab img {
   margin-right: 10px;
 }
-.serves .serves-tab .tabs-body .tab-content .btn-tab p {
+.serves .serves-tab .tabs-body .tab-content .btn-tab span {
   transition: all 0.6s ease 0.15s;
   color: #ccc;
   font-size: 20px;
